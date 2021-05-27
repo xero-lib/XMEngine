@@ -6,6 +6,12 @@ enable_testing()
 
 add_executable(sandbox ${CMAKE_CURRENT_SOURCE_DIR}/src/application.cpp)
 
+if (NOT TARGET xme)
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../xme xme)
+endif ()
+
+target_link_libraries(sandbox xme)
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)

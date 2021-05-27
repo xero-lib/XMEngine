@@ -1,4 +1,4 @@
-#include "main.hpp"
+#include "print.hpp"
 #include <stdio.h>
 
 namespace XME
