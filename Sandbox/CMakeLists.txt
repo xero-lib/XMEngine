@@ -4,7 +4,7 @@ project(sandbox VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(sandbox ${CMAKE_CURRENT_SOURCE_DIR}/src/application.cpp)
+add_executable(sandbox ${CMAKE_CURRENT_SOURCE_DIR}/src/Sandbox.cpp)
 
 if (NOT TARGET xme)
     add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../xme xme)

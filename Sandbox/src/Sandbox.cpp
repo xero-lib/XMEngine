@@ -21,6 +21,6 @@ int main()
     //print sizes
     std::cout << "unsigned long long:\t" << sizeof(unsigned long long) << std::endl;
     std::cout << "size_t:\t"             << sizeof(size_t)             << std::endl;
-    std::cout << "int:\t"                << sizeof(int)                << std::endl;
     std::cout << "char:\t"               << sizeof(char)               << std::endl;
+    std::cout << "int:\t"                << sizeof(int)                << std::endl;
 }
